@@ -102,7 +102,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\TestController.cs" />
+    <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Domain\Common\LogEmailHandler.cs" />
     <Compile Include="Domain\Common\EmailSendEvent.cs" />
     <Compile Include="Domain\Customers\CustomerRegisteredEvent.cs" />
