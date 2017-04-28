@@ -103,6 +103,12 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\TestController.cs" />
+    <Compile Include="Domain\Common\LogEmailHandler.cs" />
+    <Compile Include="Domain\Common\EmailSendEvent.cs" />
+    <Compile Include="Domain\Customers\CustomerRegisteredEvent.cs" />
+    <Compile Include="Domain\Customers\RegisterCustomerCommand.cs" />
+    <Compile Include="Domain\Customers\RegisterCustomerHandler.cs" />
+    <Compile Include="Domain\Customers\SendWelcomeEmailHandler.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -144,7 +150,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Logs\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
